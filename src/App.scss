@@ -1,0 +1,76 @@
+.App {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    background: #E5E5E5;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    h1 {
+        font-weight: 600;
+        font-size: 60px;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h4 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__content{
+        width: 95%;
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto 0;
+        padding-bottom: 50px;
+    }
+    @media (min-width: 1440px) and (max-width: 1560px) {
+        &__content{
+            max-width: 1340px;
+        }
+      }
+      @media (min-width: 1280px) and (max-width: 1439px){
+        h3 {
+            font-size: 20px;
+        }
+        &__content{
+            max-width: 1180px;
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        h3 {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        h4 {
+            font-size: 14px;
+            line-height: 18px;
+      }
+    }
+    @media (min-width: 560px) and (max-width: 767px) {
+        h1 {
+            font-size: 40px;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+        h3 {
+            font-size: 20px;
+            line-height: 22px;
+        }
+        &__content{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

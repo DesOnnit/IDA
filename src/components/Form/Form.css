@@ -1,0 +1,92 @@
+.Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: sticky;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 330px;
+  margin-top: 40px;
+  max-height: 440px;
+  top: 24px;
+  background: #FFFEFB;
+  -webkit-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+          box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 4px;
+}
+.Form__content {
+  width: 90%;
+}
+.Form__button {
+  width: 100%;
+  height: 36px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #B4B4B4;
+  background: #EEEEEE;
+  border-radius: 10px;
+  border: none;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.Form__button_active {
+  background: #7BAE73;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+.Form__button_active:hover {
+  opacity: 0.8;
+}
+.Form__add {
+  display: none;
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .Form {
+    width: 310px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .Form {
+    max-height: 470px;
+    max-width: 230px;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .Form {
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+  }
+  .Form_disabled {
+    height: 10%;
+    position: absolute;
+    height: 0%;
+    top: 30px;
+  }
+  .Form__content_disabled {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+  }
+  .Form__add {
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: #7BAE73;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  .Form__add_close {
+    display: none;
+  }
+}

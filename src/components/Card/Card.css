@@ -1,0 +1,138 @@
+.card {
+  width: 330px;
+  height: 423px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+          box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+  -webkit-animation: show 1s ease-in;
+          animation: show 1s ease-in;
+}
+.card_remove {
+  -webkit-animation: close 0.5s ease-in;
+          animation: close 0.5s ease-in;
+}
+.card__img {
+  width: 100%;
+  min-height: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 16px;
+  padding-left: 16px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background: #FFFEFB;
+}
+.card__title {
+  margin-bottom: 16px;
+}
+.card__text {
+  margin-bottom: 32px;
+  text-align: left;
+  max-width: 95%;
+  word-break: break-word;
+}
+.card__price {
+  margin-bottom: 24px;
+}
+.card__button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: #FF8484;
+  border: none;
+  background-image: url(../../imgs/delete.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.card__button:hover {
+  opacity: 0.7;
+}
+@media (min-width: 1440px) and (max-width: 1560px) {
+  .card {
+    width: 310px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .card {
+    width: 270px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .card {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card {
+    width: 230px;
+  }
+}
+@media (min-width: 560px) and (max-width: 767px) {
+  .card {
+    width: 244px;
+    height: 450px;
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes close {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes close {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
